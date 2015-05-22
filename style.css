@@ -1,0 +1,145 @@
+ nav {
+     background-color:aliceblue;
+     border: 1px solid white;
+     color: brown;
+ }
+ 
+button {
+    color:red;
+}
+
+#containernav {
+    background-color: aliceblue;
+     border: 1px solid white;
+    color: brown;
+ }
+ .navbar-nav .navbar-default {
+     font-size: 20px;
+     color: brown;
+     background:aliceblue;
+      border: 1px solid white;
+ }
+ 
+ 
+@media (min-width: @screen-sm-min) {
+    ...
+}
+/* Medium devices (desktops, 992px and up) */
+
+@media (min-width: @screen-md-min) {
+    ...
+}
+/* Large devices (large desktops, 1200px and up) */
+
+@media (min-width: @screen-lg-min) {
+    ...
+}
+@media (max-width: @screen-xs-max) {
+    ...
+}
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+    ...
+}
+@media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+    ...
+}
+@media (min-width: @screen-lg-min) {
+    ...
+}
+#topnav > li > a:visited,
+#topnav > li > a:link,
+#topnav > li > a:active {
+    color: brown;
+    font-size: 15px;
+}
+#title1 {
+    color: brown;
+    fontsize: 30;
+    font-style: italic;
+   	font-family: cursive;
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.3999996185303px;
+    margin-bottom: 15px;
+} 
+.title2a {
+    color: brown;
+}
+ 
+#bar1 {
+    background-color: #754b23;
+    height: 15px;
+}
+.container {
+    color: brown;
+    fontsize: 15;
+}
+#container-img {
+    background-image: url(images/strips2.png);
+    background-repeat: repeat-y;
+    height: 100%;
+    background-position: right;
+    background-size: 40% 100%;
+    
+}
+
+.row1 {
+    margin-left: 15px;
+}
+.dotimg {
+    margin-top: 10px;
+    height: 100%;
+     
+   
+}
+#title2 {
+    color: brown;
+    text-align: center;
+    color: brown;
+    font-style: italic;
+   	font-family: cursive;
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.3999996185303px;
+    margin-bottom: 15px;
+} 
+ 
+a#footerx {
+    background-color: #06b4af;
+    height: 80px;
+    width: 100%;
+}
+.phone-num {
+    color: white;
+    margin-top: 20px;
+    
+}
+    
+ 
+.footerphone {
+    margin-top: 20px;
+    background-position: right;
+    height: 15px;
+    width: 55px;
+    margin-left: 15px;
+    
+}
+.bluefooter {
+    width: 100%;
+    height: 100%;
+    background-color: #06b4af;
+    height: 53px;
+}
+footdots {
+    height: 20px;
+}
+#footertitle {
+    margin-top: 25px;
+    color: white;
+    fontsize: 15px;
+    text-align: center;
+}
