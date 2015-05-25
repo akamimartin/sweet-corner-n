@@ -1,11 +1,53 @@
- nav {
-     background-color:aliceblue;
-     border: 1px solid white;
+ .container {
      color: brown;
+     font-size: 16px;
+     font-weight: 600
  }
- 
-button {
-    color:red;
+  
+
+#spanId {
+    background-color: brown;
+}
+
+nav {
+     background-color:white;
+     border: 1px solid white;
+     color: white;
+ } 
+
+.navbar-toggle {
+    color: brown;
+}
+
+.navbar-header {
+    border: 1px solid white;
+    background-color: white;
+    color: brown;
+}
+
+#myNavbar {
+    background-color: white;
+    border: 1px solid white;
+    color: brown;
+}
+.spanline {
+    background-color: brown;
+}
+
+ul li a {
+     color: brown;
+    font-size: 20px;
+    background-color: white;
+}
+
+
+
+#navid {
+    color: brown:
+        background: brown;
+}
+listx {
+        float: left;
 }
 
 #containernav {
@@ -19,6 +61,123 @@ button {
      background:aliceblue;
       border: 1px solid white;
  }
+
+#bar1 {
+    background-color: #754b23;
+    height: 15px;
+    width: 98%;
+    margin-left: 23px;
+}
+ .row1 { 
+     color: brown;
+ }
+     
+     
+#email-addr  {
+    color: teal;
+    font-style: italic;
+}
+ 
+
+  #nameid {
+        background-color: #e86b35;
+        width: 310px;
+        height: 35px; 
+        color: brown;
+        font-weight:  800;
+        border-radius: 0px;
+
+    }
+    
+  #emailid {
+        background-color: #f6b53e;
+        width: 310px;
+        height: 35px; 
+        color: brown;
+        font-weight:  800; 
+        border-radius: 0px;
+  
+    }   
+  #phoneid {
+        background-color: #06b4af;
+        width: 310px;
+        height: 35px; 
+        color: brown;
+        font-weight:  800;
+        border-radius: 0px;
+      
+  
+    }   
+    
+   #subjectid {
+       background-color: #e86b35;
+       width: 310px;
+       height: 35px; 
+       color: brown;
+       font-weight:  800;
+       border-radius: 0px;
+
+    }   
+    
+   #messageid {
+        background-color: #f6b53e;
+        width: 310px;
+        height: 115px;
+       font-weight:  800;
+       border-radius: 0px;
+    }   
+  #submit {   
+        background-color: #06b4af;
+        width: 155px;
+        height: 35px; 
+        color: white;
+        margin-left: 153px;
+        border-radius: 0px;
+
+    }
+
+#phonetitle {
+    margin-top: 20px;
+}
+
+   .list-group-item {   
+      
+       width: 152px;
+       height: 35px;
+       background-color: #f6ede6;
+       color: brown;
+       font-weight: 400px;
+       font-size: 14px;
+       border-radius: 0px;
+       //text-align: center;
+       list-style-type: none;
+       margin-top: 5px;
+       margin-bottom: 5px;
+      
+    } 
+
+    #list2 { 
+       //text-align: center;
+       width: 218px;
+       height: 35px;
+       background-color: #f6ede6;
+       color: brown;
+       font-weight: 400px;
+       font-size: 14px;
+       border-radius: 0px;
+       text-align: center;
+       list-style-type: none;
+
+        margin-top: 5px;
+       margin-bottom: 5px;
+    
+         
+     
+       
+   }
+ul li a {
+    list-style-type: none;
+   }
  
  
 @media (min-width: @screen-sm-min) {
@@ -52,30 +211,44 @@ button {
     color: brown;
     font-size: 15px;
 }
+    
+#buttonId {
+   color: brown;
+    }
+
+.spanline{
+    color: brown;
+}
+    
 #title1 {
     color: brown;
-    fontsize: 30;
     font-style: italic;
    	font-family: cursive;
 	font-size: 24px;
-	font-style: normal;
 	font-variant: normal;
-	font-weight: 500;
+	font-weight: 400;
 	line-height: 26.3999996185303px;
     margin-bottom: 15px;
 } 
-.title2a {
+#title2a {
     color: brown;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    margin-top: 20px;
+  
 }
  
-#bar1 {
-    background-color: #754b23;
-    height: 15px;
-}
-.container {
-    color: brown;
-    fontsize: 15;
-}
+
+#formtitle {
+   color: brown;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    margin-top: 15px;
+} 
+
+
 #container-img {
     background-image: url(images/strips2.png);
     background-repeat: repeat-y;
@@ -85,15 +258,40 @@ button {
     
 }
 
+#container-imgs {
+    background-image: url(images/strips1.png);
+    background-repeat: repeat-y;
+    height: 100%;
+    background-position: right;
+    background-size: 20% 100%;
+    
+}
+#box2-img {
+    margin-right: -30px;
+    margin-top: 15px;
+}
+
 .row1 {
     margin-left: 15px;
 }
 .dotimg {
     margin-top: 10px;
     height: 100%;
-     
-   
 }
+     
+ .dotimg2 {
+    margin-top: 10px;
+    height: 100%;
+  
+}
+
+ #dots-box1 {
+     margin-top: 70px;
+     height; 100%;
+ }
+     
+    
+
 #title2 {
     color: brown;
     text-align: center;
@@ -107,7 +305,9 @@ button {
 	line-height: 26.3999996185303px;
     margin-bottom: 15px;
 } 
- 
+   
+    
+   
 a#footerx {
     background-color: #06b4af;
     height: 80px;
@@ -129,13 +329,16 @@ a#footerx {
     
 }
 .bluefooter {
+    margin-left: 1px;
     width: 100%;
     height: 100%;
     background-color: #06b4af;
     height: 53px;
+    margin-left: 15px;
 }
-footdots {
-    height: 20px;
+    
+#footdots {
+     height: 20px;
 }
 #footertitle {
     margin-top: 25px;
@@ -143,3 +346,4 @@ footdots {
     fontsize: 15px;
     text-align: center;
 }
+   

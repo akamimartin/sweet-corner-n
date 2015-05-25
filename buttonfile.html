@@ -1,0 +1,126 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Sweet Corner</title>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+  
+</head>
+    
+ <script> 
+
+    function ajaxfunction(){
+        console.log('this is working')
+//        $.ajax({
+//            dataType: 'html',
+//            url:ajax.html,
+//            cache:false,
+//            success: function(response) {
+//                
+//            $('p').html(console.log(response));
+//       
+//             console.log(response);
+//     
+     
+$(document).ready(function() {
+    $('button').click(ajaxfunction() {
+           console.log('this is working')
+               
+                  
+//        $.ajax({
+//            dataType: 'html',
+//            url:ajax.html,
+//            cache:false,
+//            success: function(response) {
+//                
+//            $('p').html(console.log(response));
+//       
+//             console.log(response);                   
+   
+ }
+)};
+
+        $(document).ready(function () {
+            $('#getASampleTalk').click(function () {
+                $.ajax({
+                    url: 'http://api.joind.in/v2.1/events?filter=upcoming',
+                    data: {
+                        format: 'json'
+                    },
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    error: function () {
+                        $('#resultTalk').html('<p>An error has occurred</p>');
+                    },
+                    success: function (data) {
+
+                        for (var i = 0; i < 9; i++) {
+                            var $name = $('<h2>').text(data.events[i].name);
+                            var $description =
+                                $('<h2>').text(data.events[i].description);
+                            var $start_date =
+                                $('<h2>').text(data.events[i].start_date);
+                            $('#resultTalk')
+                                .append($name)
+                                .append($description);
+
+
+                        }
+                    }
+                });
+            });
+        });
+    </script>  
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+    
+    
+    
+    
+    
+ </script>   
+    
+    
+    
+    
+
+ <body>
+    
+ <div id='content'></div>
+  <button>load</button> 
+    
+    
+    
+    
+    
+</body>
+    
+
+
+</html>
