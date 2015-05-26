@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -13,38 +13,113 @@
 </head>
 
 <body>
-   
-     
-  <div class="container" id=>
-      <div class="row ">
-        <nav class="navbar" id=>
-       <div>
-       <img class="col-md-12 col-xs-12" src="images/header.png" />
-    </div>
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span> 
-      </button>
-   
-    </div>
-       <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="index.html">HOME</a></li>
-            <li><a href="about.html">ABOUT US</a></li>
-            <li><a href="services.html">SERVICES</a></li> 
-            <li><a href="contact.html">CONTACT</a></li> 
-         </ul>
-    
-       </div>
-  </div>
- </nav>
-</div>
-    </div>
+    <script>
+        $(document).ready(function() {
+
+            console.log('this is working1after ready');
+        });
+
+        function home() {
+         
+            $.ajax({
+                dataType: 'html',
+                url: 'home_template.html',
+                cache: false,
+                error: function() {
+                    $('#resultTalk').html('<p>An error has occurred</p>');
+                },
+                success: function(response) {
+                    console.log('this is working1');
+                    $('.main_container1').html(response);
+                    console.log(response);
+                }
+            });
+        };
+
+        function about() {
         
+            $.ajax({
+                dataType: 'html',
+                url: 'about_template.html',
+                cache: false,
+                error: function() {
+                    $('#resultTalk').html('<p>An error has occurred</p>');
+                },
+                success: function(response) {
+                    console.log('this is working1');
+                    $('.main_container1').html(response);
+                    console.log(response);
+                }
+            });
+        };
+
+        function services() {
+         
+            $.ajax({
+                dataType: 'html',
+                url: 'services_template.html',
+                cache: false,
+                error: function() {
+                    $('#resultTalk').html('<p>An error has occurred</p>');
+                },
+                success: function(response) {
+                    console.log('this is working1');
+                    $('.main_container1').html(response);
+                    console.log(response);
+                }
+            });
+        };
+
+        function contact() {
+     
+            $.ajax({
+                dataType: 'html',
+                url: 'contact_template.html',
+                cache: false,
+                error: function() {
+                    $('#resultTalk').html('<p>An error has occurred</p>');
+                },
+                success: function(response) {
+                    console.log('this is working1');
+                    $('.main_container1').html(response);
+                    console.log(response);
+                }
+            });
+        };
+    </script>
 
 
+    <div class="container" id=>
+        <div class="row ">
+            <nav class="navbar" id=>
+                <div>
+                    <img class="col-md-12 col-xs-12" src="images/header.png" />
+                </div>
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar" id="spanId"></span>
+                        <span class="icon-bar" id="spanId"></span>
+                        <span class="icon-bar" id="spanId"></span>
+                    </button>
+
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="#" onclick="home()">HOME</a>
+                        </li>
+                        <li><a href="#" onclick="about()">ABOUT US</a>
+                        </li>
+                        <li><a href="#" onclick="services()">SERVICES</a>
+                        </li>
+                        <li><a href="#" onclick="contact()">CONTACT</a>
+                        </li>
+                    </ul>
+
+                </div>
+        </div>
+        </nav>
+    </div>
+    </div>
 
     <div class="container">
         <div class="row text-center">
@@ -52,62 +127,39 @@
 
 
             <div class="row text-center">
-                <p class="col-md-12 col-xs-11"  id="title1">We deliver cupcakes for the important events in your life!</p>
+                <p class="col-md-12 col-xs-11" id="title1">We deliver cupcakes for the important events in your life!</p>
             </div>
             <div class="col-md-12 col-xs-12" id="bar1"></div>
         </div>
     </div>
 
 
-    <div class="container" id="container-img">
-        <div class="row1">
-            <div class="col-sm-7 col-xs-7" id="column1">
-                <h3 class= "col-md-12 col-xs=12 title2a">We cherish the sweet moments...</h3>
-                <p class="detail2 col-md-12 col-xs=12">Sweet corner's story began first from our passion for sweets, which is inspired by our everyday job and also by the acknowedged weakness for sweets</p>
+    <div class="main_container1">
 
-                <p class="detail2 col-md-12 col-xs=12">For us, the Sweet corner means: the right amutn of sweet, flawless appearance, the combination of shape, color and proportion and a right and balanced decor for the event.</p>
-                <p class="detail2 col-md-12 col-xs=12">We have been baking gourmet cupcakes, 100% from Scratch, since day one. We always use the finest and most natural ingredients we can find.</p>
-
-                <h3 class="detail2 col-md-12 col-xs=12">We can make happiness with so little!</h3>
-                <p class= "detail2 col-md-12 col-xs=12">We can provide services for Weddings, Bar & Bat Mitzvahs, Birthdays, Showers, Corporate Events, and any other special occassions!</p>
-
-                <p class="detail2 col-md-12 col-xs=6">Our expert bakers are waiting to create a memorable, unqiue cupcake bursting with freshness and flavour just for you.</p>
-                <p class="detail2 col-md-12 col-xs=12">Their delcious taste, great variety and their sweet universe, colorful and flavorful cupcakes make the best choice for a chic desert. How could you resist these delcius cupcakes?.</p>
-            </div>
-
-
-            <img class="col-sm-2  col-xs-4 col-sm-offset-3 dotimg" id="column2img" src="images/dots-box2.png" />
-            
-
-
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="row">
-            <p "col-sm-12 col-xs-6" id="title2">Please note you will be overwhelmed by the sweet content</p>
-
-            <img class="col-md-12 col-xs-6" id="lgcupcakeimg" src="images/cupcakes.png" />
-        </div>
     </div>
 
 
+
+
+
+
+
+    <div></div>
     <div class="container">
-        <div class="bluefooter" id="footer-img">
+        <div class="bluefooter bottom-fixed" id="footer-img">
 
             <img class="col-md-1 col-xs-1" id="footerdots" src="images/dots-footer.png">
-            <p class="col-sm-8 col-xs-4" id="footertitle">Copyright@Sweet Corner. All rights. reserved
+            <p class="col-sm-7 col-xs-7" id="footertitle">Copyright@Sweet Corner. All rights. reserved
             </p>
             <div>
                 <img class="col-md-1 col-xs-1 footerphone" id="footerphone" src="images/phone.png">
-                <p class="col-sm-2 col-xs-2 phone-num" id='phone-num'>800 264-2099</p>
+                <p class="col-sm-3 col-xs-3  phone-num" id='phone-num'>800 264-2099</p>
             </div>
 
 
             <div class="col-sm-1  col-xs-1 clearfix"></div>
         </div>
     </div>
-
 
 
 </body>

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -13,6 +13,29 @@
 </head>
 
 <body>
+    <script>
+        $(document).ready(function() {
+
+            console.log('this is working1after ready');
+        });
+
+        function about() {
+            console.log('this is working1after ajax');
+            $.ajax({
+                dataType: 'html',
+                url: 'about_template.html',
+                cache: false,
+                error: function() {
+                    $('#resultTalk').html('<p>An error has occurred</p>');
+                },
+                success: function(response) {
+                    console.log('this is working1');
+                    $('.main_container1').html(response);
+                    console.log(response);
+                }
+            });
+        };
+    </script>
 
 
     <div class="container" id=>
@@ -23,50 +46,28 @@
                 </div>
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
+                        <span class="icon-bar" id="spanId"></span>
+                        <span class="icon-bar" id="spanId"></span>
+                        <span class="icon-bar" id="spanId"></span>
                     </button>
 
                 </div>
-                <div class="collapse navbar-collapse" id="myNavbar">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a href="index.html">HOME</a>
-                        </li>
-                        <li><a href="about.html">ABOUT US</a>
-                        </li>
-                        <li><a href="services.html">SERVICES</a>
-                        </li>
-                        <li><a href="contact.html">CONTACT</a>
-                        </li>
-                    </ul>
+                  <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="index.html">HOME</a>
+                    </li>
+                    <li><a   href="about_template.html" onclick="about()">ABOUT US</a></li>
+                    <li><a href="services_template.html" >SERVICES</a>
+                    </li>
+                    <li><a  href="contact_template.html" >CONTACT</a>
+                    </li>
+                </ul>
 
-                </div>
+            </div>
         </div>
         </nav>
     </div>
     </div>
-
-    <!--     <div class="row">
-            <div>
-                <img class="col-md-12 col-xs-12" src="images/header.png" />
-            </div>
-            <nav class="nav  col-md-12 col-xs-12">
-                <span></span>
-                <ul class="nav navbar-nav  navbar-default navbar-right  " id="topnav">
-                    <li role="presentation" class="active col-md-3"><a href="index.html">HOME</a>
-                    </li>
-                    <li role="presentation" class="active col-md-3"><a href="about.html">ABOUT US</a>
-                    </li>
-                    <li role="presentation" class="active col-md-3"><a href="services.html">SERVICES</a>
-                    </li>
-                    <li role="presentation" class="active col-md-3"><a href="contact.html">CONTACT</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </div>  -->
-
 
     <div class="container">
         <div class="row text-center">
@@ -80,39 +81,13 @@
         </div>
     </div>
 
-
-    <div class="container" id="container-imgs">
-        <div class="row1">
-            <div class="col-sm-7 col-xs-7" id="column1">
-                <h3 class="col-md-12 col-xs=12 title2a">Delicious cupcakes, magical moments!</h3>
-                <p class="detail2 col-md-12 col-xs=12">Sweet Corner is growing fast.  Our delicious cupcakes of all sizes, shapes and colours and tastes are creating a real wow factor.
-                </p>
   
-                <p class="detail2 col-md-12 col-xs=12">Wedding cupcake prices average about $3.00 per person, depending on how elaborate your cake design is.</p>
-                <p class="detail2 col-md-12 col-xs=12">Our delicious cupcakes are different fromother bakeries.  Why?  Well, not only are our cupcakes and baked goods prepared fresh every day, we also create personalized cupcakes in any size and shape just for you!  Simply Delicious and Unique.</p>
-                <p class="detail2 col-md-12 col-xs=12">Our expert bakers create stunning cupcakes in any flavour, colour, size or shape you choose.</p>
- 
-                <p class="detail2 col-md-12 col-xs=12">Have you seen a stunning cupcake in a magazine, a TV show or on the internet?  Want something unique to reflect a character or personality?  Sweet Corner's cupcakes are baked with love and that's why we can create perfect and unique cupcakes for you.</p>
+<div class = "main_container1">
 
-                <p class="detail2 col-md-12 col-xs=6">No idea is too creative for our bakers at Sweet Corner.  Contact us today to discuss your special cupcake.</p>
-       
-            </div>
-
-
-            <img class="col-sm-2  col-xs-2" id="dots-box1"  src="images/dots-box1.png" />
-
-
-
-        </div>
-    </div>
+</div>
 
     <div class="container">
-            <img class="col-md-12 col-xs-12 pull-right" id="box2-img" src="images/box1.png" />
-        </div>
-   
-
-    <div class="container">
-        <div class="bluefooter" id="footer-img">
+        <div class="bluefooter bottom-fixed" id="footer-img">
 
             <img class="col-md-1 col-xs-1" id="footerdots" src="images/dots-footer.png">
             <p class="col-sm-8 col-xs-4" id="footertitle">Copyright@Sweet Corner. All rights. reserved
